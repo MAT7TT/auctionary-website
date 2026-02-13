@@ -1,0 +1,15 @@
+
+Finds open proccesses
+netstat -ano | findstr :3333
+
+Return
+TCP    0.0.0.0:3333     0.0.0.0:0     LISTENING     12345
+
+closes process
+taskkill /PID 12345 /F
+
+kills all proccesses
+taskkill /F /IM node.exe
+
+Test specific file
+npx mocha tests/test.b.authentication.js
